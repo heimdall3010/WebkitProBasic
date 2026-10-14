@@ -1,0 +1,35 @@
+{
+  "name": "WebkitProBasic",
+  "version": "1.0.0",
+  "description": "A modular, multilingual PHP web framework with component-based architecture and Vite-powered asset compilation.",
+  "private": true,
+  "author": "Deniz Inan",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --mode development --watch",
+    "watch": "vite build --mode development --watch",
+    "build:dev": "vite build --mode development",
+    "build": "vite build --mode production",
+    "preview": "vite preview",
+    "audit": "npm audit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heimdall3010/WebkitProBasic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heimdall3010/WebkitProBasic/issues"
+  },
+  "homepage": "https://github.com/heimdall3010/WebkitProBasic#readme",
+  "overrides": {
+    "source-map-js": "^1.2.2"
+  },
+  "devDependencies": {
+    "sass": "^1.105.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true
+  }
+}

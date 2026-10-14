@@ -1,0 +1,254 @@
+@use 'vars' as *;
+
+* {
+  box-sizing: border-box;
+  color: var(--text-prim);
+  font-family: $font-text;
+  caret-color: transparent;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+
+  @media (max-width: $breakpoint-xl) {
+    font-size: 9px;
+  }
+
+  @media (max-width: $breakpoint-m) {
+    font-size: 8px;
+  }
+}
+
+body {
+  position: relative;
+  margin: 0;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+
+/* --------------------------------
+ * Backdrop
+ * -------------------------------- */
+
+.backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  transition: .3s;
+
+  &-active {
+    background-color: var(--shadow-prim);
+    z-index: 1000;
+  }
+}
+
+
+/* --------------------------------
+ * Sections
+ * -------------------------------- */
+
+section {
+  width: 100%;
+  padding-top: $section-padding-top
+}
+
+
+/* --------------------------------
+ * Typography
+ * -------------------------------- */
+
+strong {
+  font-family: $font-bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-headline;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  margin-bottom: 2.25rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: 'Motivate';
+}
+
+h3 {
+  font-size: 2.75rem;
+}
+
+h4 {
+  font-size: 2.25rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-family: 'Motivate';
+  font-size: 2rem;
+}
+
+p,
+a,
+li {
+  font-size: $font-size;
+}
+
+p,
+li {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+/* --------------------------------
+ * Backgrounds
+ * -------------------------------- */
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.bg-prim {
+  background-color: var(--prim);
+}
+
+.bg-sec {
+  background-color: var(--sec);
+}
+
+.bg-terz {
+  background-color: var(--terz);
+}
+
+.bg-quart {
+  background-color: var(--quart);
+}
+
+/* --------------------------------
+ * padding
+ * -------------------------------- */
+
+.padding-l {
+  padding: 2rem;
+}
+
+
+.padding-xl {
+  padding: 4rem;
+}
+
+.padding-xxl {
+  padding: 6rem;
+}
+
+/* --------------------------------
+ * Divider
+ * -------------------------------- */
+
+.divider-img {
+  max-height: 50rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+
+/* --------------------------------
+ * Wrappers
+ * -------------------------------- */
+
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  margin: 0 auto;
+  max-width: $wrapper;
+  z-index: 10;
+
+  &-large {
+    max-width: $wrapper-large;
+    padding: 0 2rem;
+  }
+
+  &-medium {
+    max-width: $wrapper-medium;
+    padding: 0 2rem;
+  }
+
+  &-slim {
+    max-width: $wrapper-slim;
+    padding: 0 2rem;
+  }
+
+  &-boxed {
+
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 4rem;
+
+  }
+
+  @media (max-width: $breakpoint-l) {
+
+    &-large,
+    &-medium,
+    &-slim {
+      padding: 0 4rem;
+    }
+
+    &-boxed {
+      padding: 4rem 1.5rem;
+    }
+  }
+
+  &-minus-margin-up {
+
+    @media (min-width: $breakpoint-l) {
+      margin-top: -15rem;
+    }
+
+  }
+}
+
+
+
+/* --------------------------------
+ * Utilities
+ * -------------------------------- */
+
+.text-right {
+  text-align: right;
+
+  @media (max-width: $breakpoint-xl) {
+    text-align: left;
+  }
+}

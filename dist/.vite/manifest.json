@@ -1,0 +1,68 @@
+{
+  "components/heroFat/img/hero-dark.png": {
+    "file": "assets/hero-dark-CQCIAOU-.png",
+    "src": "components/heroFat/img/hero-dark.png"
+  },
+  "components/heroFat/img/hero-light.jpeg": {
+    "file": "assets/hero-light-CCw0CWKS.jpeg",
+    "src": "components/heroFat/img/hero-light.jpeg"
+  },
+  "components/heroSlim/img/hero-slim.jpg": {
+    "file": "assets/hero-slim-DDdpCqpu.jpg",
+    "src": "components/heroSlim/img/hero-slim.jpg"
+  },
+  "src/main.ts": {
+    "file": "assets/main-DKP77cdJ.js",
+    "name": "main",
+    "src": "src/main.ts",
+    "isEntry": true,
+    "css": [
+      "assets/main-Cd5giSDj.css"
+    ],
+    "assets": [
+      "assets/BuenosAires-Light-DRcpRtK4.woff2",
+      "assets/BuenosAires-Light-QLvLonOu.woff",
+      "assets/BuenosAires-Regular-s_NpmnXd.woff2",
+      "assets/BuenosAires-Regular-BetssKvb.woff",
+      "assets/BuenosAires-Bold-DK1M_Hm_.woff2",
+      "assets/BuenosAires-Bold-BSk3na8a.woff",
+      "assets/Motivate-zqHgSr80.woff2",
+      "assets/Motivate-DosFnwoC.woff",
+      "assets/hero-light-CCw0CWKS.jpeg",
+      "assets/hero-dark-CQCIAOU-.png",
+      "assets/hero-slim-DDdpCqpu.jpg"
+    ]
+  },
+  "style/fonts/BuenosAires/BuenosAires-Bold.woff": {
+    "file": "assets/BuenosAires-Bold-BSk3na8a.woff",
+    "src": "style/fonts/BuenosAires/BuenosAires-Bold.woff"
+  },
+  "style/fonts/BuenosAires/BuenosAires-Bold.woff2": {
+    "file": "assets/BuenosAires-Bold-DK1M_Hm_.woff2",
+    "src": "style/fonts/BuenosAires/BuenosAires-Bold.woff2"
+  },
+  "style/fonts/BuenosAires/BuenosAires-Light.woff": {
+    "file": "assets/BuenosAires-Light-QLvLonOu.woff",
+    "src": "style/fonts/BuenosAires/BuenosAires-Light.woff"
+  },
+  "style/fonts/BuenosAires/BuenosAires-Light.woff2": {
+    "file": "assets/BuenosAires-Light-DRcpRtK4.woff2",
+    "src": "style/fonts/BuenosAires/BuenosAires-Light.woff2"
+  },
+  "style/fonts/BuenosAires/BuenosAires-Regular.woff": {
+    "file": "assets/BuenosAires-Regular-BetssKvb.woff",
+    "src": "style/fonts/BuenosAires/BuenosAires-Regular.woff"
+  },
+  "style/fonts/BuenosAires/BuenosAires-Regular.woff2": {
+    "file": "assets/BuenosAires-Regular-s_NpmnXd.woff2",
+    "src": "style/fonts/BuenosAires/BuenosAires-Regular.woff2"
+  },
+  "style/fonts/Motivate/Motivate.woff": {
+    "file": "assets/Motivate-DosFnwoC.woff",
+    "src": "style/fonts/Motivate/Motivate.woff"
+  },
+  "style/fonts/Motivate/Motivate.woff2": {
+    "file": "assets/Motivate-zqHgSr80.woff2",
+    "src": "style/fonts/Motivate/Motivate.woff2"
+  }
+}
