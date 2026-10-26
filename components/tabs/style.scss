@@ -1,0 +1,95 @@
+@use '../../style/vars' as *;
+
+.tab-component {
+
+  .tab-active {
+    transition: .5s;
+  }
+
+  .tabs-navigation-wrapper {
+    margin-bottom: 5rem;
+  }
+
+  .tabs-navigation-wrapper .btn-group {
+    margin: 0;
+  }
+
+  .tabs-containers-wrapper {
+    position: relative;
+  }
+
+
+  .tab-container {
+    position: absolute;
+    opacity: 0;
+    left: -100000px;
+    top: 0;
+    transition: opactiy .5s;
+
+    a {
+      pointer-events: none;
+      cursor: default;
+    }
+
+    &.tab-active {
+      position: relative;
+      left: 0;
+      opacity: 1;
+      transition: opacity .5s;
+
+      a {
+        pointer-events: all;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .tab-container {
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+
+
+      th,
+      td {
+        padding: 1.25rem 1.5rem;
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid  color-mix(in srgb,
+                var(--component-color-1) 11%,
+                transparent);
+      }
+
+      th {
+        color: var(--component-color-1);
+        font-weight: 700;
+        font-size: 1.8rem;
+      }
+
+      tbody {
+
+        tr {
+          transition: background-color 0.2s ease;
+          font-size: 1.4rem;
+
+          &:hover {
+            background-color: color-mix(in srgb,
+                var(--component-color-1) 5%,
+                transparent);
+          }
+        }
+
+        td:first-child {
+          width: 30%;
+        }
+
+        td:last-child {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

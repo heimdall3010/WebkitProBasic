@@ -1,0 +1,87 @@
+RewriteEngine On
+
+#######################################
+# ROOT & Default Page
+#######################################
+#RewriteBase /
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteRule ^$ en/home?lang=en [L,R=301]
+
+#######################################
+# 0. Vite Assets
+# Niemals durch das PHP-Routing schicken
+#######################################
+RewriteRule ^dist/ - [L]
+
+#######################################
+# 1. Pretty URLs für Blogposts
+#######################################
+RewriteRule ^de/post/([a-zA-Z0-9_-]+)$ de/post.php?seo_url=$1&lang=de [QSA,L]
+RewriteRule ^en/post/([a-zA-Z0-9_-]+)$ en/post.php?seo_url=$1&lang=en [QSA,L]
+
+#######################################
+# 2. Direkte .php-Aufrufe auf Clean URL
+#######################################
+RewriteCond %{THE_REQUEST} \s/+[^\s?]+\.php(?:[\s?]|$) [NC]
+RewriteCond %{REQUEST_URI} ^(.+)\.php$ [NC]
+RewriteRule ^(.+)\.php$ %1 [R=302,L,NE]
+
+#######################################
+# 3. Clean URLs intern auf PHP abbilden
+#######################################
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+#######################################
+# 4. Sprache automatisch ergänzen
+#######################################
+
+RewriteCond %{QUERY_STRING} !(^|&)lang=de(&|$)
+RewriteCond %{REQUEST_URI} ^/de/
+RewriteRule ^(.*)$ /$1?lang=de [QSA,L]
+
+RewriteCond %{QUERY_STRING} !(^|&)lang=en(&|$)
+RewriteCond %{REQUEST_URI} ^/en/
+RewriteRule ^(.*)$ /$1?lang=en [QSA,L]
+
+#######################################
+# 5. Sicherheit
+#######################################
+
+Options -Indexes
+
+# Direkte Ordneraufrufe
+RewriteRule ^(components|de|en|php|misc|style)/?$ /en/home?lang=en [R=301,L]
+
+# Interne PHP-/Style-Verzeichnisse schützen
+RewriteRule ^(php|style)/.+$ /en/home?lang=en [R=301,L]
+
+#######################################
+# 6. DE 404
+#######################################
+
+RewriteCond %{REQUEST_URI} ^/de/
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpe?g|gif|svg|webp|avif|woff2?|ttf|eot|ico|json|webmanifest|mp4)$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /de/404?lang=de [R=302,L]
+
+#######################################
+# 7. EN 404
+#######################################
+
+RewriteCond %{REQUEST_URI} ^/en/
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpe?g|gif|svg|webp|avif|woff2?|ttf|eot|ico|json|webmanifest|mp4)$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /en/404?lang=en [R=302,L]
+
+#######################################
+# 8. Generic 404
+#######################################
+
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpe?g|gif|svg|webp|avif|woff2?|ttf|eot|ico|json|webmanifest|mp4)$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /en/404?lang=en [R=302,L]

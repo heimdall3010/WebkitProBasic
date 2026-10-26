@@ -1,0 +1,28 @@
+{
+  "headline": "WebkitPro",
+  "buttons": [
+    {
+      "btn_text": "Paravent Slider",
+      "btn_link": "#_sliderParavent",
+      "btn_type": "btn-colored",
+      "btn_target": "_self"
+    },
+    {
+      "btn_text": "Project Slider",
+      "btn_link": "#_sliderProjects",
+      "btn_type": "btn-colored-outline",
+      "btn_target": "_self"
+    }
+  ],
+  "portrait": "portrait-cutout.png",
+  "orbit_icons": [
+    "logo-html-5",
+    "logo-sass",
+    "logo-javascript",
+    "logo-php",
+    "logo-node-js",
+    "logo-apache"
+  ],
+  "subheadline": "A Modular, Code-First<br>PHP Website Framework",
+  "text": "<p>A modular, code-first PHP web framework for building multilingual, content-driven websites. It combines reusable frontend components with server-side routing, templates, centralized configuration, and CMS-like content management. Vite provides bundling, minification, and asset versioning of SCSS, JavaScript, and TypeScriptUnlike a traditional CMS, WebkitPro requires no administrative GUI and keeps the website structure, components, and content entirely code-driven.</p>"
+}

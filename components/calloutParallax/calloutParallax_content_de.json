@@ -1,0 +1,21 @@
+{
+    "quote-symbols": true,
+    "headline": "Die Macht der Web-Performance-Optimierung",
+    "subheadline": "Geschwindigkeit bestimmt die Nutzererfahrung",
+    "text": "Eine langsame Website schreckt Nutzer ab, eine schnelle hält sie. Bilder optimieren, Caching nutzen und Code minimieren steigert die Ladegeschwindigkeit erheblich. Eine optimierte Website verbessert SEO, Konversionsraten und die Zufriedenheit der Nutzer.",
+    "background_image": "parallax_4.jpg",
+    "btn_links": [
+        {
+            "btn_text": "Mehr dazu",
+            "btn_link": "button-link-1",
+            "btn_target": "_blank",
+            "btn_type": "-outline"
+        },
+        {
+            "btn_text": "Jetzt Optimieren",
+            "btn_link": "button-link-2",
+            "btn_target": "_blank",
+            "btn_type": "-outline"
+        }
+    ]
+}

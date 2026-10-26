@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /php/
+Disallow: /scripts/
+Disallow: /style/
+Disallow: /misc/
+
+# language-specific folders
+Allow: /de/
+Allow: /en/
+
+# post pages
+Allow: /de/post
+Allow: /en/post
+
+# sitemap files
+# Allow: /sitemap.xml
+# Sitemap: https://webkit-pro.di-dev.de/sitemap.xml

@@ -1,0 +1,46 @@
+@use 'vars' as *;
+
+.box-container {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.box-container > * {
+  box-sizing: border-box;
+}
+
+.box-25 {
+  flex: 0 0 calc(25% - 1.5rem);
+}
+
+.box-30 {
+  flex: 0 0 calc(30% - 1.4rem);
+}
+
+.box-40 {
+  flex: 0 0 calc(40% - 1.2rem);
+}
+
+.box-50 {
+  flex: 0 0 calc(50% - 1rem);
+}
+
+.box-60 {
+  flex: 0 0 calc(60% - .8rem);
+}
+
+.box-70 {
+  flex: 0 0 calc(70% - .6rem);
+}
+
+.box-100 {
+  flex: 0 0 100%;
+}
+
+@media (max-width: $breakpoint-xl) {
+  .box-container > * {
+    flex: 0 0 100%;
+  }
+}
