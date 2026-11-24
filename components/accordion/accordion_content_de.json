@@ -1,0 +1,23 @@
+[
+    {
+        "headline": "Progressive Enhancement",
+        "text": "Progressive Enhancement ist eine Webdesign-Strategie, die Zugänglichkeit, semantisches HTML und universelle Benutzerfreundlichkeit betont. Die Idee ist, mit einem grundlegenden Maß an Benutzererfahrung zu beginnen, das in allen Webumgebungen funktioniert, und dann zusätzliche Funktionen für Browser und Geräte hinzuzufügen, die diese unterstützen können. Dieser Ansatz stellt sicher, dass Inhalte für alle zugänglich sind, unabhängig von den Browser-Fähigkeiten, während denjenigen mit modernen Browsern ein erweitertes Erlebnis geboten wird. Er konzentriert sich zuerst auf die Kernfunktionalität und fügt dann nach und nach Komplexität und Interaktion hinzu.",
+        "btn_text": "",
+        "btn_link": "",
+        "btn_target": ""
+    },
+    {
+        "headline": "Mobile-First Ansatz",
+        "text": "Der Mobile-First-Ansatz ist eine Designstrategie, die mobile Geräte bei der Erstellung von Websites oder Anwendungen priorisiert. Mit dem Anstieg der mobilen Internetnutzung stellt das Design für kleinere Bildschirme und dann das Hochskalieren sicher, dass die Kerninhalte und -funktionen auf allen Geräten zugänglich sind. Diese Methode beginnt mit der kleinsten Bildschirmgröße und fügt nach und nach Funktionen und Designelemente hinzu, wenn die Bildschirmgröße zunimmt. Durch den Fokus auf mobile Nutzer zuerst schaffen Designer effizientere, benutzerfreundlichere Oberflächen, die auch auf größeren Bildschirmen gut funktionieren.",
+        "btn_text": "",
+        "btn_link": "",
+        "btn_target": ""
+    },
+    {
+        "headline": "Optimierung von Off-Page und On-Page SEO",
+        "text": "Die Optimierung von Off-Page und On-Page SEO umfasst die Verbesserung sowohl der Inhalte als auch der externen Faktoren, die das Suchmaschinenranking beeinflussen. On-Page SEO bezieht sich auf die Optimierung von Elementen innerhalb Ihrer Website, wie Schlüsselwörter, Meta-Tags und die Inhaltsstruktur, um die Sichtbarkeit in Suchmaschinen zu verbessern. Off-Page SEO hingegen konzentriert sich auf externe Strategien wie Linkaufbau, Engagement in sozialen Medien und Online-Reputationsmanagement. Gemeinsam tragen diese Praktiken dazu bei, den organischen Traffic zu erhöhen, indem sie die Relevanz und Autorität der Website in Suchmaschinen verbessern.",
+        "btn_text": "mehr erfahren",
+        "btn_link": "http://localhost/web/webkit_pro/blog.php",
+        "btn_target": ""
+    }
+]

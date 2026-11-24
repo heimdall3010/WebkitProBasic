@@ -1,0 +1,21 @@
+{
+    "quote-symbols": true,
+    "headline": "The Power of Web Performance Optimization",
+    "subheadline": "Speed Matters in User Experience",
+    "text": "A slow website drives users away, while a fast one keeps them engaged. Optimizing images, using caching, and minimizing code can significantly boost speed. A well-optimized website enhances SEO, conversions, and overall user satisfaction.",
+    "background_image": "parallax_4.jpg",
+    "btn_links": [
+        {
+            "btn_text": "Learn More",
+            "btn_link": "button-link-1",
+            "btn_target": "_blank",
+            "btn_type": "-outline"
+        },
+        {
+            "btn_text": "Optimize Now",
+            "btn_link": "button-link-2",
+            "btn_target": "_blank",
+            "btn_type": "-outline"
+        }
+    ]
+}

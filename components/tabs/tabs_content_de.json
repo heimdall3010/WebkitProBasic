@@ -1,0 +1,50 @@
+[
+    {
+        "headline": "Überwachtes Lernen",
+        "text": "Überwachtes Lernen ist eine Art des maschinellen Lernens, bei dem das Modell auf beschrifteten Daten trainiert wird. Das bedeutet, dass jedes Trainingsbeispiel mit einem Ausgabesignal gekoppelt ist. Das Modell lernt, Vorhersagen basierend auf dieser Eingabe-Ausgabe-Beziehung zu treffen und kann für Aufgaben wie Klassifikation und Regression verwendet werden. Zu den gängigen Algorithmen gehören lineare Regression, logistische Regression und Support-Vektor-Maschinen.",
+        "btn_links": [
+            {
+                "btn_link": "/de/blog.php",
+                "btn_target": "",
+                "btn_text": "Erfahren Sie mehr über überwachtes Lernen",
+                "btn_outline": ""
+            }
+        ]
+    },
+    {
+        "headline": "Unüberwachtes Lernen",
+        "text": "Unüberwachtes Lernen beinhaltet das Training eines Modells auf Daten, die keine beschrifteten Antworten haben. Das Modell versucht, Muster und Strukturen aus den Eingabedaten zu lernen. Es wird häufig für Cluster- und Assoziationsaufgaben verwendet, bei denen das Ziel darin besteht, ähnliche Datenpunkte zu gruppieren oder verborgene Strukturen in den Daten zu finden. Beispiele für Algorithmen sind k-means-Clustering und hierarchisches Clustering.",
+        "btn_links": [
+            {
+                "btn_link": "",
+                "btn_target": "",
+                "btn_text": "",
+                "btn_outline": ""
+            }
+        ]
+    },
+    {
+        "headline": "Bestärkendes Lernen",
+        "text": "Bestärkendes Lernen ist eine Art des maschinellen Lernens, bei dem ein Agent lernt, Entscheidungen zu treffen, indem er in einer Umgebung Maßnahmen ergreift, um die kumulierte Belohnung zu maximieren. Im Gegensatz zum überwachten Lernen, bei dem das Modell aus einem festen Datensatz lernt, beinhaltet das bestärkende Lernen einen Versuch-und-Irrtum-Ansatz. Diese Art des Lernens wird häufig in Robotik, Spielen und Navigationsaufgaben verwendet.",
+        "btn_links": [
+            {
+                "btn_link": "",
+                "btn_target": "",
+                "btn_text": "",
+                "btn_outline": ""
+            }
+        ]
+    },
+    {
+        "headline": "Neuronale Netze",
+        "text": "Neuronale Netze sind ein fundamentales Konzept im maschinellen Lernen, inspiriert von der Struktur des menschlichen Gehirns. Sie bestehen aus Schichten miteinander verbundener Knoten (Neuronen), die Eingabedaten verarbeiten und komplexe Beziehungen zwischen Eingaben und Ausgaben modellieren können. Neuronale Netze sind die Grundlage des tiefen Lernens und werden in Anwendungen wie Bilderkennung, Verarbeitung natürlicher Sprache und vielen anderen Bereichen eingesetzt.",
+        "btn_links": [
+            {
+                "btn_link": "",
+                "btn_target": "",
+                "btn_text": "",
+                "btn_outline": ""
+            }
+        ]
+    }
+]

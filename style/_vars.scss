@@ -1,0 +1,119 @@
+//$font-headline: "RobotoLight";
+//$font-text: "RobotoRegular";
+//$font-bold: "RobotoBold";
+
+$font-headline: "BuenosAiresLight";
+$font-text: "BuenosAiresRegular";
+$font-bold: "BuenosAiresBold";
+
+$font-size: 1.6rem;
+
+
+$wrapper: 2560px;
+$wrapper-large: 1920px;
+$wrapper-medium: 1400px;
+$wrapper-slim: 1200px;
+
+$breakpoint-xxl: 1489px;
+$breakpoint-xl: 1289px;
+$breakpoint-l: 992px;
+$breakpoint-m: 768px;
+$breakpoint-s: 480px;
+$breakpoint-xs: 360px;
+
+
+//nav         | 13rem;
+//navSlim     | 6rem;
+//navCompact  | 6rem;
+
+$section-padding-top: 13rem;
+
+
+
+:where(
+  .wrapper-prim,
+  .wrapper-sec,
+  .wrapper-terz,
+  .wrapper-quart
+) {
+  h2 {
+    color: var(--component-color-1);
+  }
+}
+
+.wrapper-prim {
+  --component-color-1: var(--prim);
+  --component-color-2: var(--sec);
+  --component-color-3: var(--terz);
+  --component-color-4: var(--quart);
+}
+
+.wrapper-sec {
+  --component-color-1: var(--sec);
+  --component-color-2: var(--prim);
+  --component-color-3: var(--terz);
+  --component-color-4: var(--quart);
+}
+
+.wrapper-terz {
+  --component-color-1: var(--terz);
+  --component-color-2: var(--prim);
+}
+
+.wrapper-quart {
+  --component-color-1: var(--quart);
+  --component-color-2: var(--sec);
+}
+
+$success: rgba(27, 177, 0, 0.12);
+$success-text: rgb(27, 177, 0);
+$warning: rgba(150, 0, 0, 0.12);
+$warning-text: rgb(150, 0, 0);
+
+
+.lightmode {
+
+  --dark: rgb(51, 51, 51);
+  --gray: rgb(247, 247, 247);
+  --light: rgb(255, 255, 255);
+
+  --prim: rgb(0, 85, 85);
+  --sec: rgb(6, 154, 142);
+  --terz: rgb(225, 180, 75);
+  --quart: rgb(255, 254, 239);
+
+  --text-prim: #333;
+  --text-sec: #666;
+
+  --border-color: #eee;
+
+  --shadow-prim: rgba(51, 51, 51, 0.55);
+  --shadow-sec: rgba(6, 154, 142, 0.55);
+
+}
+
+.darkmode {
+
+  background-color: rgb(17, 17, 17);
+
+  --dark: rgb(244, 247, 250);
+  --gray: rgb(247, 247, 247);
+  --light: rgb(20, 20, 20);
+
+  --prim: rgb(32, 242, 231);
+  --sec: rgb(200, 34, 255);
+  --terz: rgb(26, 109, 255);
+  --quart: rgb(20, 20, 20);
+
+  --text-prim: rgb(244, 247, 250);
+  --text-sec: rgb(144, 154, 162);
+
+  --border-color: rgb(24, 48, 61);
+
+  --shadow-prim: rgba(32, 242, 231, 0.33);
+  --shadow-sec: rgba(182, 92, 255, 0.88);
+
+  .wrapper-boxed {
+    background-color: var(--quart);
+  }
+}

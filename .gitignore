@@ -1,0 +1,25 @@
+# IDE
+/.idea/
+.vscode/
+
+# Node
+/node_modules/
+
+# Composer
+/vendor/
+
+# Environment
+/.env
+/.env.local
+/.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local generated form data
+/components/form/csv/*.csv

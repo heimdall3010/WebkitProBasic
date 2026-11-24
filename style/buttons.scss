@@ -1,0 +1,179 @@
+@use 'vars' as *;
+
+
+// --------------------------------------------------
+// Button section
+// --------------------------------------------------
+
+#buttons {
+  margin: 5rem auto;
+}
+
+
+// --------------------------------------------------
+// Button containers
+// --------------------------------------------------
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+
+  &-left {
+    justify-content: flex-end;
+  }
+
+  &-center {
+    justify-content: center;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+}
+
+
+// --------------------------------------------------
+// Base button
+// --------------------------------------------------
+
+.btn {
+  display: flex;
+  width: max-content;
+  height: fit-content;
+  margin: 0;
+  padding: 10px 20px;
+
+  border: 1px solid;
+  border-radius: 20px;
+
+  cursor: pointer;
+  font-size: $font-size;
+
+  transition: .3s;
+}
+
+
+// --------------------------------------------------
+// Button group
+// --------------------------------------------------
+
+.btn-group {
+  display: flex;
+  width: max-content;
+
+  margin: 1rem;
+  padding: 10px 0;
+
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0;
+
+  .btn {
+    border-radius: 0;
+
+    &:not(:last-child) {
+      border-right-width: 0;
+
+      &:hover {
+        border-right-width: 0;
+      }
+    }
+
+    &:first-child {
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+  }
+
+  @media (max-width: $breakpoint-m) {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.5rem;
+
+    .btn {
+      border-width: 2px;
+      border-radius: 25px;
+
+      &:not(:last-child),
+      &:not(:last-child):hover {
+        border-right-width: 2px;
+      }
+    }
+  }
+}
+
+
+// --------------------------------------------------
+// Coloring
+// --------------------------------------------------
+
+.btn-colored {
+  background-color: var(--component-color-1);
+  border-color: var(--component-color-1);
+  color: var(--light);
+
+  a {
+    color: var(--light);
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    &:hover {
+      background-color: var(--light);
+      color: var(--component-color-1);
+
+      a {
+        color: var(--component-color-1);
+      }
+    }
+  }
+}
+
+.btn-colored-outline {
+  background-color: var(--light);
+  border-color: var(--component-color-1);
+  color: var(--component-color-1);
+
+  a {
+    color: var(--component-color-1);
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    &:hover {
+      background-color: var(--component-color-1);
+      color: var(--light);
+
+      a {
+        color: var(--light);
+      }
+    }
+  }
+}
+
+
+
+
+// --------------------------------------------------
+// Disabled
+// --------------------------------------------------
+
+.btn-disabled {
+  pointer-events: none;
+
+  background-color: var(--light);
+  border-color: var(--dark);
+  color: var(--dark);
+
+  opacity: 0.33;
+
+  a {
+    color: var(--dark);
+  }
+}
+

@@ -1,0 +1,287 @@
+@use '../../style/vars' as *;
+
+
+.lightmode {
+  .heroFat-component {
+
+    .heroFat-wrapper {
+      background-image: url('./img/hero-light.jpeg');
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--light);
+        position: absolute;
+        z-index: -1;
+        opacity: .77;
+      }
+    }
+  }
+}
+
+.darkmode {
+  .heroFat-component {
+
+    .heroFat-wrapper {
+      background-image: url('./img/hero-dark.png');
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--light);
+        position: absolute;
+        z-index: -1;
+        opacity: .55;
+      }
+
+    }
+  }
+}
+
+.heroFat-component {
+
+  .heroFat-wrapper {
+    height: calc(100vh - $section-padding-top);
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .heroFat-wrapper-inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      z-index: 20;
+    }
+
+  }
+
+
+  .heroFat-info-container {
+
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0;
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    .heroFat-text-container {
+
+      width: 100%;
+
+      @media (min-width: $breakpoint-l) {
+        width: 50%;
+      }
+    }
+
+
+    .heroFat-button-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    @media (min-width: $breakpoint-l) {
+
+      text-align: left;
+      justify-content: flex-start;
+
+      .heroFat-button-container {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+
+      position: absolute;
+      top: auto;
+      bottom: 15rem;
+      left: 0;
+    }
+  }
+
+
+
+
+
+  .portrait-container {
+    display: none;
+    position: absolute;
+    z-index: 40;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (min-width: $breakpoint-l) {
+      display: inline-block;
+      max-width: 130rem;
+      right: -65rem;
+      bottom: 3rem;
+
+    }
+
+
+    @media (min-width: $breakpoint-xxl) {
+      max-width: 160rem;
+      right: -90rem;
+      bottom: 5rem;
+    }
+
+  }
+
+  .circle-container {
+    display: none;
+    top: auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+    aspect-ratio: 1;
+
+    filter:
+      drop-shadow(0 0 20px var(--component-color-2));
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      ;
+
+      background: conic-gradient(from 45deg,
+          var(--component-color-3),
+          var(--component-color-2),
+          var(--component-color-3));
+
+      mask: radial-gradient(farthest-side,
+          transparent calc(100% - 1rem),
+          #000 calc(100% - 1rem + 1px));
+    }
+
+
+    @media (min-width: $breakpoint-l) {
+      display: inline-block;
+      right: 11rem;
+      bottom: 10rem;
+      width: 46rem;
+      height: 46rem;
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+      right: 2rem;
+      bottom: 12rem;
+      width: 60rem;
+      height: 60rem;
+    }
+
+  }
+
+
+  .orbit-icon-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 6rem;
+    bottom: 20rem;
+    z-index: 50;
+    padding: 2rem;
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    background-color: color-mix(in srgb, var(--component-color-4) 66%, transparent);
+    box-shadow: 0 0 11px 0 color-mix(in srgb, var(--component-color-2) 66%, transparent);
+
+    svg {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      transition: opacity .3s;
+
+      path {
+        fill: var(--component-color-2);
+      }
+    }
+
+    .svg-visible {
+      opacity: 1;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    @media (min-width: $breakpoint-l) {
+      display: flex;
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+      right: 0;
+    }
+  }
+
+
+
+  @keyframes arrowUpDown {
+
+    0%,
+    100% {
+      transform: translate(-50%, -50%);
+    }
+
+    50% {
+      transform: translate(-50%, -80%);
+    }
+  }
+
+  .heroFat-arrow-container {
+    position: absolute;
+    animation: arrowUpDown 2s linear infinite;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    bottom: 4.5rem;
+    cursor: pointer;
+    z-index: 100;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    path {
+      fill: var(--component-color-1);
+    }
+
+    @media (max-width: $breakpoint-l) {
+      bottom: 1;
+    }
+  }
+
+}
